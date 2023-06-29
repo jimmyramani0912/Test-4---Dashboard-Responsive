@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DashBoard</title>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-responsive.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="left-sidebar">
+        <div class="header margin-bottom">
+          <div class="logo">
+            <ion-icon name="business" class="main-header-logo"></ion-icon>
+            <h3 class="logo-text">Backstories.</h3>
+          </div>
+          <ion-icon name="options" class="sidebar-icon icon-general"></ion-icon>
+        </div>
+
+        <div class="options-section">
+          <div class="main-options margin-bottom">
+            <div class="option-items flex-center">
+              <ion-icon
+                name="id-card"
+                class="home-icon icon-general margin-right"
+              ></ion-icon>
+
+              <p class="options-text">Home</p>
+            </div>
+
+            <div class="option-items flex-center">
+              <ion-icon
+                name="people"
+                class="room-icon icon-general margin-right"
+              ></ion-icon>
+              <p class="options-text">Rooms</p>
+            </div>
+
+            <div class="option-items flex-center">
+              <ion-icon
+                name="chatbox"
+                class="message-icon icon-general margin-right"
+              ></ion-icon>
+              <p class="options-text">Messages</p>
+            </div>
+          </div>
+
+          <div class="other-options-section margin-bottom">
+            <h3 class="section-heading-text">OTHERS</h3>
+            <div class="other-options-items">
+              <div class="other-option-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="pricetag"
+                    class="pinned-post-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Pinned post</p>
+                </div>
+                <ion-icon
+                  name="chevron-down"
+                  class="dropdown-icon icon-general"
+                ></ion-icon>
+              </div>
+
+              <div class="other-option-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="bookmark"
+                    class="bookmark-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Saved</p>
+                </div>
+                <ion-icon
+                  name="chevron-down"
+                  class="dropdown-icon icon-general"
+                ></ion-icon>
+              </div>
+
+              <div class="other-option-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="calendar"
+                    class="calendar-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Calendar</p>
+                </div>
+              </div>
+
+              <div class="other-option-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="library"
+                    class="library-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Library</p>
+                </div>
+              </div>
+
+              <div class="other-option-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="id-card"
+                    class="id-card-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Storage</p>
+                </div>
+                <ion-icon
+                  name="chevron-down"
+                  class="dropdown-icon icon-general"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="market-place-section margin-bottom">
+            <h3 class="section-heading-text">MARKETPLACE</h3>
+            <div class="marketplace-options-items">
+              <div class="marketplace-options-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="bag"
+                    class="bag-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Be a Seller</p>
+                </div>
+              </div>
+
+              <div class="marketplace-options-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="storefront"
+                    class="storefront-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Marketplace</p>
+                </div>
+              </div>
+
+              <div class="marketplace-options-item flex-center">
+                <div class="left-title flex-center">
+                  <ion-icon
+                    name="reload-circle"
+                    class="reload-circle-icon margin-right-big icon-general"
+                  ></ion-icon>
+                  <p class="other-section-text">Be a Seller</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="setting flex-center">
+          <ion-icon
+            name="settings"
+            class="settings-icon margin-right-big icon-general"
+          ></ion-icon>
+          <p class="setting-section-text">Setting</p>
+        </div>
+      </div>
+
+      <div class="main-section">
+        <div class="post-option-section flex-center">
+          <div class="post-types margin-right-big flex-center">
+            <h3 class="margin-right main-highlight post-type-text">
+              Recent Post
+            </h3>
+            <ion-icon name="menu" class="menu-icon icon-general"></ion-icon>
+          </div>
+          <div class="post-types margin-right-big flex-center">
+            <h3 class="margin-right post-type-text">Write Post</h3>
+            <ion-icon name="pencil" class="write-icon icon-general"></ion-icon>
+          </div>
+          <div class="post-types count margin-right-big flex-center">
+            <h3 class="margin-right post-type-text">Notifications</h3>
+            <ion-icon
+              name="notifications"
+              class="notification-icon icon-general"
+            ></ion-icon>
+            <h3 class="items-count">7</h3>
+          </div>
+        </div>
+        <div class="divider margin-bottom"></div>
+
+        <div class="post-stories-section">
+          <div class="stories-section-header-text">
+            <h3 class="">STORIES</h3>
+            <p class="view-all-text">VIEW ALL</p>
+          </div>
+
+          <div class="story-post-section">
+            <div class="stories margin-bottom">
+              <div class="story">
+                <div class="storie-img">
+                  <img src="./image/story-1.jpeg" alt="story-1" />
+                </div>
+                <div class="story-text">Mr.Abdullah Jubair</div>
+              </div>
+
+              <div class="story">
+                <div class="storie-img">
+                  <img src="./image/story-2.jpg" alt="story-2" />
+                </div>
+                <div class="story-text">Eftekhar Alom Siblu</div>
+              </div>
+
+              <div class="story">
+                <div class="storie-img">
+                  <img src="./image/story-3.jpg" alt="story-3" />
+                </div>
+                <div class="story-text">Simla Anjuman Mou</div>
+              </div>
+
+              <div class="story">
+                <div class="storie-img">
+                  <img
+                    src="./image/story-1.jpeg"
+                    class="border"
+                    alt="story-1"
+                  />
+                </div>
+                <div class="story-text">Esika Jahan Moon</div>
+              </div>
+            </div>
+
+            <div class="stories-section-header-text">
+              <h3 class="">POSTS</h3>
+            </div>
+
+            <div class="posts">
+              <div class="post">
+                <div class="post-header">
+                  <div class="post-containing-person-info flex-top">
+                    <div class="containing-person-img margin-right">
+                      <img src="./image/suggest-3.webp" alt="" />
+                    </div>
+
+                    <div class="containing-person-text profile-suggest-text">
+                      <h3 class="profile-name">Ali Ashraf Prabas</h3>
+                      <p class="profession-text">writer . Kothaprakash</p>
+                    </div>
+
+                    <div class="follow flex-center">
+                      <h3>Follow</h3>
+                      <ion-icon
+                        name="add"
+                        class="icon-general follow-icon"
+                      ></ion-icon>
+                    </div>
+                  </div>
+
+                  <ion-icon
+                    name="ellipsis-horizontal"
+                    class="icon-general option-icon"
+                  ></ion-icon>
+                </div>
+
+                <div class="post-desc">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aut libero quia atque incidunt amet esse perspiciatis sequi
+                    fuga provident ex facilis, dolor culpa eius, ipsa cum rem.
+                    Nobis, blanditiis quos?
+                  </p>
+                  <h3 class="read-full">Read Full Story</h3>
+                </div>
+
+                <div class="post-img">
+                  <img src="./image/post-img.jpeg" alt="post-img" />
+                </div>
+
+                <div class="like-options flex-center">
+                  <div class="post-desc-feed flex-center">
+                    <div class="like flex-center option-hover margin-right-big">
+                      <ion-icon
+                        name="thumbs-up"
+                        class="like-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Like</h3>
+                    </div>
+                    <div
+                      class="feedback option-hover flex-center margin-right-big"
+                    >
+                      <ion-icon
+                        name="chatbox"
+                        class="feedback-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Feedback</h3>
+                    </div>
+                    <div class="share option-hover flex-center">
+                      <ion-icon
+                        name="share-social"
+                        class="share-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Share</h3>
+                    </div>
+                  </div>
+
+                  <div class="feedback-count option-hover">
+                    <h3 class="count-feed desc">71 Feedback</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <div class="post-header">
+                  <div class="post-containing-person-info flex-top">
+                    <div class="containing-person-img margin-right">
+                      <img src="./image/suggest-3.webp" alt="" />
+                    </div>
+
+                    <div class="containing-person-text profile-suggest-text">
+                      <h3 class="profile-name">Ali Ashraf Prabas</h3>
+                      <p class="profession-text">writer . Kothaprakash</p>
+                    </div>
+
+                    <div class="follow flex-center">
+                      <h3>Follow</h3>
+                      <ion-icon
+                        name="add"
+                        class="icon-general follow-icon"
+                      ></ion-icon>
+                    </div>
+                  </div>
+
+                  <ion-icon
+                    name="ellipsis-horizontal"
+                    class="icon-general option-icon"
+                  ></ion-icon>
+                </div>
+
+                <div class="post-desc">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aut libero quia atque incidunt amet esse perspiciatis sequi
+                    fuga provident ex facilis, dolor culpa eius, ipsa cum rem.
+                    Nobis, blanditiis quos?
+                  </p>
+                  <h3 class="read-full">Read Full Story</h3>
+                </div>
+
+                <div class="post-img">
+                  <img src="./image/post-img.jpeg" alt="post-img" />
+                </div>
+
+                <div class="like-options flex-center">
+                  <div class="post-desc-feed flex-center">
+                    <div class="like flex-center option-hover margin-right-big">
+                      <ion-icon
+                        name="thumbs-up"
+                        class="like-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Like</h3>
+                    </div>
+                    <div
+                      class="feedback option-hover flex-center margin-right-big"
+                    >
+                      <ion-icon
+                        name="chatbox"
+                        class="feedback-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Feedback</h3>
+                    </div>
+                    <div class="share option-hover flex-center">
+                      <ion-icon
+                        name="share-social"
+                        class="share-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Share</h3>
+                    </div>
+                  </div>
+
+                  <div class="feedback-count option-hover">
+                    <h3 class="count-feed desc">71 Feedback</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post">
+                <div class="post-header">
+                  <div class="post-containing-person-info flex-top">
+                    <div class="containing-person-img margin-right">
+                      <img src="./image/suggest-3.webp" alt="" />
+                    </div>
+
+                    <div class="containing-person-text profile-suggest-text">
+                      <h3 class="profile-name">Ali Ashraf Prabas</h3>
+                      <p class="profession-text">writer . Kothaprakash</p>
+                    </div>
+
+                    <div class="follow flex-center">
+                      <h3>Follow</h3>
+                      <ion-icon
+                        name="add"
+                        class="icon-general follow-icon"
+                      ></ion-icon>
+                    </div>
+                  </div>
+
+                  <ion-icon
+                    name="ellipsis-horizontal"
+                    class="icon-general option-icon"
+                  ></ion-icon>
+                </div>
+
+                <div class="post-desc">
+                  <p class="desc">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Aut libero quia atque incidunt amet esse perspiciatis sequi
+                    fuga provident ex facilis, dolor culpa eius, ipsa cum rem.
+                    Nobis, blanditiis quos?
+                  </p>
+                  <h3 class="read-full">Read Full Story</h3>
+                </div>
+
+                <div class="post-img">
+                  <img src="./image/post-img.jpeg" alt="post-img" />
+                </div>
+
+                <div class="like-options flex-center">
+                  <div class="post-desc-feed flex-center">
+                    <div class="like flex-center option-hover margin-right-big">
+                      <ion-icon
+                        name="thumbs-up"
+                        class="like-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Like</h3>
+                    </div>
+                    <div
+                      class="feedback option-hover flex-center margin-right-big"
+                    >
+                      <ion-icon
+                        name="chatbox"
+                        class="feedback-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Feedback</h3>
+                    </div>
+                    <div class="share option-hover flex-center">
+                      <ion-icon
+                        name="share-social"
+                        class="share-icon icon-general margin-right"
+                      ></ion-icon>
+                      <h3 class="desc">Share</h3>
+                    </div>
+                  </div>
+
+                  <div class="feedback-count option-hover">
+                    <h3 class="count-feed desc">71 Feedback</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right-sidebar">
+        <div class="profile-header">
+          <div class="profile-holder-text">
+            <h3 class="profile-name">Esika Jahan Moon</h3>
+            <p class="profession-text">content writer</p>
+          </div>
+          <div class="profile-photo">
+            <img src="./image/profile-pic.jpg" alt="profile-photo" />
+          </div>
+        </div>
+
+        <div class="section-right">
+          <div class="suggestion-section">
+            <h3 class="suggestion-heading-text">SUGGESTIONS</h3>
+          </div>
+
+          <div class="suggest-profiles margin-bottom">
+            <div class="suggest-profile">
+              <div class="prof-info flex-center">
+                <div class="prof-img">
+                  <img src="./image/suggest-1.webp" alt="profile-photo" />
+                </div>
+                <div class="profile-suggest-text">
+                  <h3 class="profile-name">Sonia Akter Moon</h3>
+                  <p class="profession-text">content writer</p>
+                </div>
+              </div>
+              <h3 class="follow-btn">Follow</h3>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="suggest-profile">
+              <div class="prof-info flex-center">
+                <div class="prof-img">
+                  <img src="./image/suggest-2.webp" alt="profile-photo" />
+                </div>
+                <div class="profile-suggest-text">
+                  <h3 class="profile-name">Jahid Hasan Tuhin</h3>
+                  <p class="profession-text">Designer</p>
+                </div>
+              </div>
+              <h3 class="follow-btn">Follow</h3>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="suggest-profile">
+              <div class="prof-info flex-center">
+                <div class="prof-img">
+                  <img src="./image/suggest-3.webp" alt="profile-photo" />
+                </div>
+                <div class="profile-suggest-text">
+                  <h3 class="profile-name">Eftekhar Alam Moni</h3>
+                  <p class="profession-text">content writer</p>
+                </div>
+              </div>
+              <h3 class="follow-btn">Follow</h3>
+            </div>
+          </div>
+
+          <div class="best-seller-section margin-bottom">
+            <div class="best-seller-img">
+              <img src="./image/best-seller-img.webp" alt="Best Seller" />
+            </div>
+            <div class="best-seller-text">
+              <div class="best-text">Best</div>
+              <div class="seller-text">Seller</div>
+            </div>
+          </div>
+
+          <div class="profile-options flex-center setting">
+            <p class="setting-section-text">Events</p>
+            <div class="dot"></div>
+            <p class="setting-section-text">Schedules</p>
+            <div class="dot"></div>
+
+            <p class="setting-section-text">Promo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
