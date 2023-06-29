@@ -165,7 +165,7 @@ html {
     font-weight: 600;
 }
 
-.other-option-item:hover,
+/* .other-option-item:hover,
 .marketplace-options-item:hover {
     background-color: #37364C;
     border-radius: 0.8rem;
@@ -175,6 +175,17 @@ html {
 }
 
 .setting :hover {
+    cursor: pointer;
+    color: #37364C;
+    font-weight: 600;
+} */
+
+.other-option-item :hover,
+.marketplace-options-item :hover,
+.setting :hover,
+.other-option-item :active,
+.marketplace-options-item :active,
+.setting :active {
     cursor: pointer;
     color: #37364C;
     font-weight: 600;
