@@ -181,3 +181,39 @@
         grid-template-columns: 1fr 2.5fr;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .right-sidebar {
+        display: none;
+    }
+
+    .dashboard {
+        display: grid;
+        grid-template-columns: 1.5fr 2.5fr;
+    }
+
+    .storie-img img {
+        height: 5.5rem;
+        border-radius: 50%;
+    }
+
+    .story-text {
+        bottom: -4rem;
+        color: #37364C;
+        left: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .post-containing-person-info {
+        flex-direction: column;
+        gap: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .post-desc-feed {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 1rem;
+    }
+}
