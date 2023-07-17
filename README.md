@@ -13,7 +13,7 @@ This website was built using HTML & CSS. It features a responsive design, intera
 To view the website locally or make changes, follow these steps:
 
 1. Clone the repository: `git clone https://github.com/jimmyramani0912/Test-4-Responsive.git`
-2. Navigate to the project directory: `cd Test-4`
+2. Navigate to the project directory: `cd Test-4-Responsive`
 3. Open the `index.html` file in your preferred web browser.
 
 ## Contributing
